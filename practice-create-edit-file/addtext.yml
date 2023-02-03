@@ -1,0 +1,28 @@
+--- 
+- name: Create a file and add test into it
+  hosts: localhost
+
+  tasks: 
+
+    - name: Create a new file
+      file: 
+        path: /tmp/ckoca_file
+        state: touch
+
+    - name: Add text to the file 
+      blockinfile:
+        path: /tmp/ckoca_file
+        block: Cihan owns this file. Whatever is written here, do not take it serious
+
+    - name: Sleep for 60 Secs
+      shell:
+        cmd: sleep 60
+
+    - name: Delete created file
+      file:
+        path: /tmp/ckoca_file
+        state: absent
+
+    - name: Message that File is deleted
+      shell: 
+        cmd: echo "ALL CLEANUP IS DONE!"

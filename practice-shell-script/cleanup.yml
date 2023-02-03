@@ -1,0 +1,24 @@
+---
+- name: Cleanup Script and Created File
+  hosts: all
+
+  vars:
+    - workdir: /home/ckoca
+    - sscript: /home/ckoca/cfile.sh
+    - sfile: /home/ckoca/filefromscript
+
+  tasks: 
+
+    - name: Delete Created File 
+      file: 
+        path: "{{ sfile }}"
+        state: absent
+
+    - name: Delete Created Shell Script
+      file:
+        path: "{{ sscript }}"
+        state: absent
+
+    - name: Message out for Cleaning Up
+      debug: 
+        msg: "All Scripts and Files are cleaned up!"

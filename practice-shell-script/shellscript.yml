@@ -1,0 +1,32 @@
+---
+- name: Run a Shell Script on Remote Host
+  hosts: all
+
+  tasks: 
+
+    - name: Create Shell Script at Home
+      file:
+        path: /home/ckoca/cfile.sh
+        state: touch 
+
+    - name: Change Script Permissions
+      file: 
+        path: /home/ckoca/cfile.sh
+        mode: a+x
+
+    - name: Write Content into File
+      shell: "touch /home/ckoca/filefromscript"
+
+    - name: Copy Shell script to managed hosts
+      copy:
+        src: /home/ckoca/Ansible/practice-shell-script/cfile.sh
+        dest: /home/ckoca/cfile.sh
+
+    - name: Execute remote Script on Host
+      shell: "/home/ckoca/cfile.sh"
+      ignore_errors: true
+
+    - name: Write some Content into created File
+      blockinfile: 
+        path: /home/ckoca/filefromscript
+        block: Das ist ein weiterer Content

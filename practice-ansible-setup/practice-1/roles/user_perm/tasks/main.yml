@@ -1,0 +1,19 @@
+---
+# tasks file for user_perm
+- name: Setup Ansible User Permissions
+  debug:
+    msg:
+       - "+--------------------------+"
+       - "| Ansible User Permissions |"
+       - "+--------------------------+"
+ 
+- name: Setup Sudoers with nopasswd
+  file:
+    path: /etc/sudoers.d/ckoca
+    state: touch
+ 
+- name: Setup Configuration of Ansible User
+  copy:
+    content: "ckoca ALL=(ALL) NOPASSWD: ALL"
+    dest: /etc/sudoers.d/ckoca
+  notify: Reload Daemon

@@ -1,0 +1,9 @@
+[dev]
+192.168.178.67
+
+[prod]
+192.168.178.68
+
+[myservers:children]
+dev
+prod

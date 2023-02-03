@@ -1,0 +1,6 @@
+---
+  - name: Create placeholder file 
+    copy: 
+      content: "This is an Ansible Practice by CKOCA\n || 
+               {{ ansible_facts['fqdn'] }} has been customized using Ansible. \n"
+      dest: "{{ file }}"

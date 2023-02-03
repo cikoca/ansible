@@ -1,0 +1,15 @@
+---
+- name: Clean and Remove Directory and File from hosts
+  hosts: all
+
+  vars:
+    - workdir: /home/ckoca/testdir
+    - workfile: /home/ckoca/testdir/testdata
+
+  tasks:
+
+    - name: Remove Directory with Content in it
+      file:
+        path: "{{ workdir }}"
+        state: absent
+        force: true

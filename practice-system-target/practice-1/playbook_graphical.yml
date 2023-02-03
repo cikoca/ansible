@@ -1,0 +1,32 @@
+---
+- name: Change System Target to Graphical on Hosts
+  hosts: myservers
+  become: true 
+  gather_facts: true 
+
+  tasks: 
+
+    - name: Get current Target on Hosts 
+      command: 
+        cmd: systemctl get-default
+      register: check_target 
+
+    - name: Output of System-Target
+      debug: 
+        msg: "This Current Target of the System is: {{ check_target.stdout }}"
+
+    - name: Change Target to Graphical if its Multiuser 
+      file: 
+        state: link
+        src: /usr/lib/systemd/system/graphical.target
+        dest: /etc/systemd/system/default.target
+      when: "'graphical-target' not in check_target"
+
+    - name: Get current System Target on Hosts
+      command: 
+        cmd: systemctl get-default
+      register: check_target
+
+    - name: Output of Curretn Target
+      debug: 
+        msg: "The current System target on {{ ansible_hostname }} is: {{ check_target.stdout }}"

@@ -1,0 +1,12 @@
+---
+- name: Cleanup motd of template on managed hosts
+  hosts: myservers
+  remote_user: ckoca
+  become: true 
+
+  tasks: 
+
+    - name: Cleanup motd File from Template
+      file: 
+        path: /etc/motd
+        state: absent 

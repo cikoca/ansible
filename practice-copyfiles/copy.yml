@@ -1,0 +1,16 @@
+---
+- name: Copy files from local to remote clients
+  hosts: myservers
+  
+  tasks: 
+
+    - name: Copying file
+      become: true
+      copy: 
+        src: /home/ckoca/Ansible/practice-copyfiles/some.cfg
+        dest: /tmp
+        owner: ckoca
+        group: ckoca
+        mode: 0644
+
+    

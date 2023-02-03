@@ -1,0 +1,5 @@
+---
+# handlers file for root_setup
+- name: Reload Daemon
+  shell:
+    cmd: systemctl daemon-reload

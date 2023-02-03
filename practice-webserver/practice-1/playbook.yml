@@ -1,0 +1,58 @@
+---
+- name: Create a Custom Webserver with Content
+  hosts: dev
+  gather_facts: true 
+  become: true 
+
+  tasks: 
+
+    - name: Install necessary Packages
+      yum: 
+        name: 
+          - httpd
+          - firewalld
+        state: present 
+
+    - name: Start and enable Service 
+      service: 
+        name: "{{ item }}"
+        state: started
+        enabled: true 
+      loop: 
+        - httpd
+        - firewalld
+
+    - name: Open Ports 
+      firewalld: 
+        service: http 
+        state: enabled
+        permanent: true 
+        immediate: true 
+
+    - name: Create Dir for Webcontent
+      file: 
+        state: directory 
+        path: /myweb 
+        mode: 02775
+        setype: httpd_sys_content_t 
+
+    - name: Create index
+      file: 
+        state: touch
+        path: /myweb/index.html 
+
+    - name: Copy Content to index.html
+      copy: 
+        content: "Development Webserver" 
+        dest: /myweb/index.html 
+
+    - name: Create Directory
+      file: 
+        state: directory
+        path: /var/www/html/myweb
+
+    - name: Create a Link 
+      file: 
+        path: /myweb
+        dest: /var/www/html/
+        state: link 

@@ -1,0 +1,39 @@
+--- 
+- name: Create and Remove file
+  hosts: all
+  vars:
+    - workdir: /home/ckoca/testdir
+    - workdata: /home/ckoca/testdir/testdata
+
+  tasks: 
+  
+    - name: Create a Directory
+      file: 
+        path: "{{ workdir }}"
+        owner: ckoca
+        group: ckoca
+        mode: 0644
+        state: directory 
+
+    - name: Create a File in created Directory
+      file: 
+        path: "{{ workdata }}"
+        state: touch
+
+    - name: Write some Content in created File 
+      shell:
+        cmd: echo "This is some Content!" >> {{ workdata }}
+
+    - name: Stat the new File testdata
+      stat:
+        path: "{{ workdata }}"
+
+    - name: Change Permissions on Directory 
+      file: 
+        path: "{{ workdir }}"
+        mode: a+rw
+
+    - name: Change Permissions on File
+      file:
+        path: "{{ workdata }}"
+        mode: a+rwx

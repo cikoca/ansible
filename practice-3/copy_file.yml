@@ -1,0 +1,14 @@
+---
+- name: Using the Copy Module to Copy files to hosts
+  hosts: myservers
+  
+  tasks: 
+
+    - name: Copy myfile.txt to managed hosts and set attributes 
+      copy: 
+        src: files/myfile.txt
+        dest: /home/ckoca/myfile.txt
+        owner: ckoca
+        group: ckoca
+        mode: u+rw,g-wx,o-rwx
+        setype: samba_share_t

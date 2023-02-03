@@ -1,0 +1,3 @@
+---
+# vars file for ssh-user-keygen
+ssh_user_pubkey: '{{ ssh_user_keydir }}/{{ ssh_user_keypair }}.{{ ssh_user_pubkey_ext }}'

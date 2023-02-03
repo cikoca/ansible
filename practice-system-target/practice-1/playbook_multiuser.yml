@@ -1,0 +1,33 @@
+---
+- name: Change System Target to Multi-User on Hosts
+  hosts: myservers
+  become: true 
+  gather_facts: true 
+
+  tasks: 
+
+    - name: Get current System-Target 
+      command: 
+        cmd: systemctl get-default
+      register: get_target
+
+    - name: Output of Target
+      debug: 
+        msg: "The Current target is {{ get_target.stdout }}"
+
+    - name: Change target to Multi-User 
+      file: 
+        state: link
+        src: /usr/lib/systemd/system/multi-user.target
+        dest: /etc/systemd/system/default.target 
+
+    - name: Get current System-Target
+      command: 
+        cmd: systemctl get-default
+      register: get_target
+
+    - name: Output of Target
+      debug: 
+        msg: "The Current target is {{ get_target.stdout }}"
+
+

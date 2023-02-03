@@ -1,0 +1,8 @@
+users:
+  - name: John
+    description: Der Jonny
+    job: developer 
+
+  - name: Sally
+    description: die Sally
+    job: manager

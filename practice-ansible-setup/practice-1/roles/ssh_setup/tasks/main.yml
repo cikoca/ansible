@@ -1,0 +1,34 @@
+---
+# tasks file for ssh_setup
+- name: SSH Connection Setup Message
+  debug:
+    msg:
+       - "+-------------------------+"
+       - "|  SSH Connection Setup   |"
+       - "+-------------------------+"
+ 
+- name: Create Role requirement File
+  file:
+    path: /home/ckoca/ansible/roles/requirements.yml
+    state: file
+  when: inventory_hostname == "localhost"
+ 
+- name: Create requirements
+  copy:
+    content: |
+      - src: andrewrothstein.ssh-user-keygen
+        name: ssh-keygen
+    dest: /home/ckoca/ansible/roles/requirements.yml
+  when: inventory_hostname == "localhost"
+ 
+- name: Install Galaxy Role SSH Keygen
+  command:
+    cmd: ansible-galaxy install -r /home/ckoca/ansible/roles/requirements.yml
+  when: inventory_hostname == "localhost"
+ 
+- name: Setup SSH-Keys
+  include_role:
+    name: ssh-keygen
+  vars:
+    ssh_user_keydir: /home/ckoca/.ssh/
+

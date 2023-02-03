@@ -1,0 +1,10 @@
+---
+- name: Change file permissions
+  hosts: all
+
+  tasks:
+
+    - name: File Permissions
+      file:
+        path: /home/ckoca/thisismyfile
+        mode: a+w

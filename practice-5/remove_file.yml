@@ -1,0 +1,11 @@
+---
+- name: Use the file module to remove a file 
+  hosts: myservers
+  remote_user: ckoca
+
+  tasks:
+
+    - name: Remove a file from managed hosts
+      file:
+        path: /home/ckoca/myfile.txt
+        state: absent 

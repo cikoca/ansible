@@ -1,0 +1,17 @@
+---
+# tasks file for install_packages
+- name: Install required Packages Message
+  debug:
+    msg:
+      - "+---------------------------+"
+      - "| Install Required Packages |"
+      - "+---------------------------+"
+           
+- name: Ensure required Packages are installed
+  yum: 
+    name:
+      - ansible
+      - python3
+    state: present
+  when: ansible_hostname == "localhost"
+

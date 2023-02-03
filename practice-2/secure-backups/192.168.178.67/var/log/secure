@@ -1,0 +1,335 @@
+Aug 29 14:13:29 localhost polkitd[792]: Loading rules from directory /etc/polkit-1/rules.d
+Aug 29 14:13:29 localhost polkitd[792]: Loading rules from directory /usr/share/polkit-1/rules.d
+Aug 29 14:13:29 localhost polkitd[792]: Finished loading, compiling and executing 12 rules
+Aug 29 14:13:29 localhost polkitd[792]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Aug 29 14:13:31 localhost sshd[963]: Server listening on 0.0.0.0 port 22.
+Aug 29 14:13:31 localhost sshd[963]: Server listening on :: port 22.
+Aug 29 14:14:48 localhost systemd[5975]: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+Aug 29 14:14:48 localhost gdm-launch-environment][5968]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+Aug 29 14:14:52 localhost polkitd[792]: Registered Authentication Agent for unix-session:c1 (system bus name :1.63 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale de_DE.UTF-8)
+Aug 29 14:15:01 localhost systemd[6315]: pam_unix(systemd-user:session): session opened for user ckoca by (uid=0)
+Aug 29 14:15:01 localhost gdm-password][6304]: pam_unix(gdm-password:session): session opened for user ckoca by (uid=0)
+Aug 29 14:15:04 localhost polkitd[792]: Registered Authentication Agent for unix-session:2 (system bus name :1.239 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale de_DE.UTF-8)
+Aug 29 14:15:11 localhost gdm-launch-environment][5968]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Aug 29 14:15:11 localhost polkitd[792]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.63, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale de_DE.UTF-8) (disconnected from bus)
+Aug 29 14:15:21 localhost systemd[5978]: pam_unix(systemd-user:session): session closed for user gdm
+Aug 29 14:17:18 localhost sudo[7369]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/yum update -y
+Aug 29 14:17:18 localhost sudo[7369]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Aug 29 14:17:18 localhost sudo[7369]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 29 14:24:25 localhost gdm-password][9776]: gkr-pam: unlocked login keyring
+Aug 29 14:25:14 localhost useradd[9863]: failed adding user 'dbus', exit code: 9
+Aug 29 14:25:18 localhost polkitd[792]: Reloading rules
+Aug 29 14:25:18 localhost polkitd[792]: Collecting garbage unconditionally...
+Aug 29 14:25:18 localhost polkitd[792]: Loading rules from directory /etc/polkit-1/rules.d
+Aug 29 14:25:18 localhost polkitd[792]: Loading rules from directory /usr/share/polkit-1/rules.d
+Aug 29 14:25:18 localhost polkitd[792]: Finished loading, compiling and executing 12 rules
+Aug 29 14:25:18 localhost polkitd[792]: Reloading rules
+Aug 29 14:25:18 localhost polkitd[792]: Collecting garbage unconditionally...
+Aug 29 14:25:18 localhost polkitd[792]: Loading rules from directory /etc/polkit-1/rules.d
+Aug 29 14:25:18 localhost polkitd[792]: Loading rules from directory /usr/share/polkit-1/rules.d
+Aug 29 14:25:18 localhost polkitd[792]: Finished loading, compiling and executing 12 rules
+Aug 29 14:25:36 localhost polkitd[792]: Reloading rules
+Aug 29 14:25:36 localhost polkitd[792]: Collecting garbage unconditionally...
+Aug 29 14:25:36 localhost polkitd[792]: Loading rules from directory /etc/polkit-1/rules.d
+Aug 29 14:25:36 localhost polkitd[792]: Loading rules from directory /usr/share/polkit-1/rules.d
+Aug 29 14:25:36 localhost polkitd[792]: Finished loading, compiling and executing 12 rules
+Aug 29 14:25:36 localhost polkitd[792]: Reloading rules
+Aug 29 14:25:36 localhost polkitd[792]: Collecting garbage unconditionally...
+Aug 29 14:25:36 localhost polkitd[792]: Loading rules from directory /etc/polkit-1/rules.d
+Aug 29 14:25:36 localhost polkitd[792]: Loading rules from directory /usr/share/polkit-1/rules.d
+Aug 29 14:25:36 localhost polkitd[792]: Finished loading, compiling and executing 12 rules
+Aug 29 14:25:37 localhost polkitd[792]: Registered Authentication Agent for unix-process:10335:73623 (system bus name :1.808 [flatpak remote-list --system], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale de_DE.UTF-8)
+Aug 29 14:25:37 localhost polkitd[792]: Unregistered Authentication Agent for unix-process:10335:73623 (system bus name :1.808, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale de_DE.UTF-8)
+Aug 29 14:26:59 localhost polkitd[792]: Reloading rules
+Aug 29 14:26:59 localhost polkitd[792]: Collecting garbage unconditionally...
+Aug 29 14:26:59 localhost polkitd[792]: Loading rules from directory /etc/polkit-1/rules.d
+Aug 29 14:26:59 localhost polkitd[792]: Loading rules from directory /usr/share/polkit-1/rules.d
+Aug 29 14:26:59 localhost polkitd[792]: Finished loading, compiling and executing 12 rules
+Aug 29 14:26:59 localhost polkitd[792]: Reloading rules
+Aug 29 14:26:59 localhost polkitd[792]: Collecting garbage unconditionally...
+Aug 29 14:26:59 localhost polkitd[792]: Loading rules from directory /etc/polkit-1/rules.d
+Aug 29 14:26:59 localhost polkitd[792]: Loading rules from directory /usr/share/polkit-1/rules.d
+Aug 29 14:26:59 localhost polkitd[792]: Finished loading, compiling and executing 12 rules
+Aug 29 14:27:02 localhost useradd[12771]: failed adding user 'gdm', exit code: 9
+Aug 29 14:27:02 localhost polkitd[792]: Reloading rules
+Aug 29 14:27:02 localhost polkitd[792]: Collecting garbage unconditionally...
+Aug 29 14:27:02 localhost polkitd[792]: Loading rules from directory /etc/polkit-1/rules.d
+Aug 29 14:27:02 localhost polkitd[792]: Loading rules from directory /usr/share/polkit-1/rules.d
+Aug 29 14:27:02 localhost polkitd[792]: Finished loading, compiling and executing 12 rules
+Aug 29 14:27:02 localhost polkitd[792]: Reloading rules
+Aug 29 14:27:02 localhost polkitd[792]: Collecting garbage unconditionally...
+Aug 29 14:27:02 localhost polkitd[792]: Loading rules from directory /etc/polkit-1/rules.d
+Aug 29 14:27:02 localhost polkitd[792]: Loading rules from directory /usr/share/polkit-1/rules.d
+Aug 29 14:27:02 localhost polkitd[792]: Finished loading, compiling and executing 12 rules
+Aug 29 14:27:07 localhost useradd[12804]: failed adding user 'gnome-initial-setup', exit code: 9
+Aug 29 14:27:07 localhost polkitd[792]: Reloading rules
+Aug 29 14:27:07 localhost polkitd[792]: Collecting garbage unconditionally...
+Aug 29 14:27:07 localhost polkitd[792]: Loading rules from directory /etc/polkit-1/rules.d
+Aug 29 14:27:07 localhost polkitd[792]: Loading rules from directory /usr/share/polkit-1/rules.d
+Aug 29 14:27:07 localhost polkitd[792]: Finished loading, compiling and executing 12 rules
+Aug 29 14:27:07 localhost polkitd[792]: Reloading rules
+Aug 29 14:27:07 localhost polkitd[792]: Collecting garbage unconditionally...
+Aug 29 14:27:07 localhost polkitd[792]: Loading rules from directory /etc/polkit-1/rules.d
+Aug 29 14:27:07 localhost polkitd[792]: Loading rules from directory /usr/share/polkit-1/rules.d
+Aug 29 14:27:07 localhost polkitd[792]: Finished loading, compiling and executing 12 rules
+Aug 29 14:27:25 localhost polkitd[792]: Reloading rules
+Aug 29 14:27:25 localhost polkitd[792]: Collecting garbage unconditionally...
+Aug 29 14:27:25 localhost polkitd[792]: Loading rules from directory /etc/polkit-1/rules.d
+Aug 29 14:27:25 localhost polkitd[792]: Loading rules from directory /usr/share/polkit-1/rules.d
+Aug 29 14:27:25 localhost polkitd[792]: Finished loading, compiling and executing 12 rules
+Aug 29 14:27:25 localhost polkitd[792]: Reloading rules
+Aug 29 14:27:25 localhost polkitd[792]: Collecting garbage unconditionally...
+Aug 29 14:27:25 localhost polkitd[792]: Loading rules from directory /etc/polkit-1/rules.d
+Aug 29 14:27:25 localhost polkitd[792]: Loading rules from directory /usr/share/polkit-1/rules.d
+Aug 29 14:27:25 localhost polkitd[792]: Finished loading, compiling and executing 12 rules
+Aug 29 14:27:52 localhost sshd[963]: Received signal 15; terminating.
+Aug 29 14:27:52 localhost sshd[18047]: Server listening on 0.0.0.0 port 22.
+Aug 29 14:27:52 localhost sshd[18047]: Server listening on :: port 22.
+Aug 29 14:30:03 linux sshd[18047]: Received signal 15; terminating.
+Aug 29 14:30:03 linux sshd[34554]: Server listening on 0.0.0.0 port 22.
+Aug 29 14:30:03 linux sshd[34554]: Server listening on :: port 22.
+Aug 29 14:31:00 linux gdm-password][38129]: gkr-pam: unlocked login keyring
+Aug 29 14:34:14 linux sudo[7369]: pam_unix(sudo:session): session closed for user root
+Aug 29 14:35:16 linux sudo[108338]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/yum install ansible -y
+Aug 29 14:35:16 linux sudo[108338]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Aug 29 14:35:16 linux sudo[108338]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 29 14:35:20 linux sudo[108338]: pam_unix(sudo:session): session closed for user root
+Aug 29 14:47:18 localhost polkitd[776]: Loading rules from directory /etc/polkit-1/rules.d
+Aug 29 14:47:18 localhost polkitd[776]: Loading rules from directory /usr/share/polkit-1/rules.d
+Aug 29 14:47:18 localhost polkitd[776]: Finished loading, compiling and executing 12 rules
+Aug 29 14:47:18 localhost polkitd[776]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Aug 29 14:47:20 localhost sshd[912]: Server listening on 0.0.0.0 port 22.
+Aug 29 14:47:20 localhost sshd[912]: Server listening on :: port 22.
+Aug 29 14:47:22 localhost systemd[1399]: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+Aug 29 14:47:23 localhost gdm-launch-environment][1217]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+Aug 29 14:47:35 localhost polkitd[776]: Registered Authentication Agent for unix-session:c1 (system bus name :1.91 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale de_DE.UTF-8)
+Aug 29 14:47:46 localhost systemd[5848]: pam_unix(systemd-user:session): session opened for user ckoca by (uid=0)
+Aug 29 14:47:47 localhost gdm-password][5834]: pam_unix(gdm-password:session): session opened for user ckoca by (uid=0)
+Aug 29 14:47:54 localhost polkitd[776]: Registered Authentication Agent for unix-session:2 (system bus name :1.224 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale de_DE.UTF-8)
+Aug 29 14:47:58 localhost gdm-launch-environment][1217]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Aug 29 14:48:03 localhost polkitd[776]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.91, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale de_DE.UTF-8) (disconnected from bus)
+Aug 29 14:48:09 localhost systemd[1452]: pam_unix(systemd-user:session): session closed for user gdm
+Aug 29 14:48:46 localhost polkitd[776]: Registered Authentication Agent for unix-process:6763:9735 (system bus name :1.474 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale de_DE.UTF-8)
+Aug 29 14:48:47 localhost polkitd[776]: Unregistered Authentication Agent for unix-process:6763:9735 (system bus name :1.474, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale de_DE.UTF-8) (disconnected from bus)
+Aug 29 14:50:38 localhost sudo[6880]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/vim /etc/hosts
+Aug 29 14:50:38 localhost sudo[6880]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Aug 29 14:50:38 localhost sudo[6880]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 29 14:50:50 localhost sudo[6880]: pam_unix(sudo:session): session closed for user root
+Aug 29 14:51:24 localhost sudo[6934]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/systemctl reload
+Aug 29 14:51:24 localhost sudo[6934]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Aug 29 14:51:24 localhost sudo[6934]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 29 14:51:24 localhost sudo[6934]: pam_unix(sudo:session): session closed for user root
+Aug 29 14:53:18 localhost sudo[7069]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/vim /etc/hosts
+Aug 29 14:53:18 localhost sudo[7069]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Aug 29 14:53:18 localhost sudo[7069]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 29 14:53:25 localhost sudo[7069]: pam_unix(sudo:session): session closed for user root
+Aug 29 14:53:30 localhost polkitd[776]: Registered Authentication Agent for unix-process:7098:38160 (system bus name :1.522 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale de_DE.UTF-8)
+Aug 29 14:53:33 localhost polkitd[776]: Operator of unix-session:2 successfully authenticated as unix-user:ckoca to gain TEMPORARY authorization for action org.freedesktop.systemd1.reload-daemon for system-bus-name::1.523 [systemctl daemon-reload] (owned by unix-user:ckoca)
+Aug 29 14:53:34 localhost polkitd[776]: Unregistered Authentication Agent for unix-process:7098:38160 (system bus name :1.522, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale de_DE.UTF-8) (disconnected from bus)
+Aug 29 14:59:47 target-1 polkitd[773]: Loading rules from directory /etc/polkit-1/rules.d
+Aug 29 14:59:47 target-1 polkitd[773]: Loading rules from directory /usr/share/polkit-1/rules.d
+Aug 29 14:59:47 target-1 polkitd[773]: Finished loading, compiling and executing 12 rules
+Aug 29 14:59:47 target-1 polkitd[773]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Aug 29 14:59:49 target-1 sshd[906]: Server listening on 0.0.0.0 port 22.
+Aug 29 14:59:49 target-1 sshd[906]: Server listening on :: port 22.
+Aug 29 14:59:52 target-1 systemd[1367]: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+Aug 29 14:59:53 target-1 gdm-launch-environment][1204]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+Aug 29 15:00:00 target-1 polkitd[773]: Registered Authentication Agent for unix-session:c1 (system bus name :1.92 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale de_DE.UTF-8)
+Aug 29 15:00:41 target-1 sshd[1984]: Accepted password for ckoca from 2001:16b8:1ebf:c700:a00:27ff:fe2c:b964 port 35678 ssh2
+Aug 29 15:00:42 target-1 systemd[1992]: pam_unix(systemd-user:session): session opened for user ckoca by (uid=0)
+Aug 29 15:00:42 target-1 sshd[1984]: pam_unix(sshd:session): session opened for user ckoca by (uid=0)
+Aug 29 15:01:05 target-1 sshd[2013]: Received disconnect from 2001:16b8:1ebf:c700:a00:27ff:fe2c:b964 port 35678:11: disconnected by user
+Aug 29 15:01:05 target-1 sshd[2013]: Disconnected from user ckoca 2001:16b8:1ebf:c700:a00:27ff:fe2c:b964 port 35678
+Aug 29 15:01:05 target-1 sshd[1984]: pam_unix(sshd:session): session closed for user ckoca
+Aug 29 15:01:15 target-1 systemd[1997]: pam_unix(systemd-user:session): session closed for user ckoca
+Aug 29 15:23:49 target-1 sshd[2346]: Accepted password for ckoca from 2001:16b8:1ebf:c700:a00:27ff:fe2c:b964 port 59778 ssh2
+Aug 29 15:23:50 target-1 systemd[2362]: pam_unix(systemd-user:session): session opened for user ckoca by (uid=0)
+Aug 29 15:23:50 target-1 sshd[2346]: pam_unix(sshd:session): session opened for user ckoca by (uid=0)
+Aug 29 15:23:59 target-1 sudo[2464]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/systemctl status httpd
+Aug 29 15:23:59 target-1 sudo[2464]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Aug 29 15:23:59 target-1 sudo[2464]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Aug 29 15:23:59 target-1 sudo[2464]: pam_unix(sudo:session): session closed for user root
+Aug 29 15:24:11 target-1 sshd[2470]: Connection closed by authenticating user ckoca 192.168.178.66 port 57408 [preauth]
+Aug 29 15:24:38 target-1 sshd[2472]: Accepted password for ckoca from 2001:16b8:1ebf:c700:a00:27ff:fe2c:b964 port 51924 ssh2
+Aug 29 15:24:38 target-1 sshd[2472]: pam_unix(sshd:session): session opened for user ckoca by (uid=0)
+Aug 29 15:24:43 target-1 sshd[2476]: Received disconnect from 2001:16b8:1ebf:c700:a00:27ff:fe2c:b964 port 51924:11: disconnected by user
+Aug 29 15:24:43 target-1 sshd[2476]: Disconnected from user ckoca 2001:16b8:1ebf:c700:a00:27ff:fe2c:b964 port 51924
+Aug 29 15:24:43 target-1 sshd[2472]: pam_unix(sshd:session): session closed for user ckoca
+Aug 29 15:25:10 target-1 sshd[2538]: Connection closed by authenticating user ckoca 2001:16b8:1ebf:c700:a00:27ff:fe2c:b964 port 50530 [preauth]
+Aug 29 15:25:10 target-1 sshd[2540]: Connection closed by authenticating user ckoca 2001:16b8:1ebf:c700:a00:27ff:fe2c:b964 port 50540 [preauth]
+Aug 29 15:25:13 target-1 sshd[2542]: Accepted password for ckoca from 2001:16b8:1ebf:c700:a00:27ff:fe2c:b964 port 50554 ssh2
+Aug 29 15:25:13 target-1 sshd[2542]: pam_unix(sshd:session): session opened for user ckoca by (uid=0)
+Aug 29 15:25:13 target-1 sshd[2546]: Received disconnect from 2001:16b8:1ebf:c700:a00:27ff:fe2c:b964 port 50554:11: disconnected by user
+Aug 29 15:25:13 target-1 sshd[2546]: Disconnected from user ckoca 2001:16b8:1ebf:c700:a00:27ff:fe2c:b964 port 50554
+Aug 29 15:25:13 target-1 sshd[2542]: pam_unix(sshd:session): session closed for user ckoca
+Aug 29 15:25:26 target-1 sshd[2383]: Received disconnect from 2001:16b8:1ebf:c700:a00:27ff:fe2c:b964 port 59778:11: disconnected by user
+Aug 29 15:25:26 target-1 sshd[2383]: Disconnected from user ckoca 2001:16b8:1ebf:c700:a00:27ff:fe2c:b964 port 59778
+Aug 29 15:25:26 target-1 sshd[2346]: pam_unix(sshd:session): session closed for user ckoca
+Aug 29 15:25:36 target-1 systemd[2367]: pam_unix(systemd-user:session): session closed for user ckoca
+Aug 29 15:25:58 target-1 sshd[2636]: Accepted publickey for ckoca from 2001:16b8:1ebf:c700:a00:27ff:fe2c:b964 port 49718 ssh2: RSA SHA256:QRjZ2utyqBAcqPSK6HKNUScAXD1ikGjbebKrGwinmhA
+Aug 29 15:25:58 target-1 systemd[2643]: pam_unix(systemd-user:session): session opened for user ckoca by (uid=0)
+Aug 29 15:25:58 target-1 sshd[2636]: pam_unix(sshd:session): session opened for user ckoca by (uid=0)
+Aug 29 15:26:04 target-1 sshd[2666]: Received disconnect from 2001:16b8:1ebf:c700:a00:27ff:fe2c:b964 port 49718:11: disconnected by user
+Aug 29 15:26:04 target-1 sshd[2666]: Disconnected from user ckoca 2001:16b8:1ebf:c700:a00:27ff:fe2c:b964 port 49718
+Aug 29 15:26:04 target-1 sshd[2636]: pam_unix(sshd:session): session closed for user ckoca
+Aug 29 15:26:14 target-1 systemd[2648]: pam_unix(systemd-user:session): session closed for user ckoca
+Aug 29 15:26:28 target-1 sshd[2784]: Accepted publickey for ckoca from 192.168.178.66 port 46048 ssh2: RSA SHA256:QRjZ2utyqBAcqPSK6HKNUScAXD1ikGjbebKrGwinmhA
+Aug 29 15:26:28 target-1 systemd[2791]: pam_unix(systemd-user:session): session opened for user ckoca by (uid=0)
+Aug 29 15:26:29 target-1 sshd[2784]: pam_unix(sshd:session): session opened for user ckoca by (uid=0)
+Aug 29 15:26:30 target-1 sudo[3033]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-hmihnaejmuclgovdlphsgxypohjtcokw ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1661779589.2751184-3594-49075326394404/AnsiballZ_setup.py
+Aug 29 15:26:30 target-1 sudo[3033]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Aug 29 15:26:30 target-1 sudo[3033]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Aug 29 15:26:31 target-1 sudo[3033]: pam_unix(sudo:session): session closed for user root
+Aug 29 15:26:34 target-1 sudo[3230]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-lwypmllmtqapuqsilhsejsrhhbeprmis ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1661779593.9889398-3623-53327323420324/AnsiballZ_dnf.py
+Aug 29 15:26:34 target-1 sudo[3230]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Aug 29 15:26:34 target-1 sudo[3230]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Aug 29 15:26:51 target-1 groupadd[3279]: group added to /etc/group: name=apache, GID=48
+Aug 29 15:26:51 target-1 groupadd[3279]: group added to /etc/gshadow: name=apache
+Aug 29 15:26:52 target-1 groupadd[3279]: new group: name=apache, GID=48
+Aug 29 15:26:52 target-1 useradd[3286]: new user: name=apache, UID=48, GID=48, home=/usr/share/httpd, shell=/sbin/nologin
+Aug 29 15:26:55 target-1 groupadd[3296]: group added to /etc/group: name=mysql, GID=27
+Aug 29 15:26:55 target-1 groupadd[3296]: group added to /etc/gshadow: name=mysql
+Aug 29 15:26:55 target-1 groupadd[3296]: new group: name=mysql, GID=27
+Aug 29 15:26:55 target-1 useradd[3302]: new user: name=mysql, UID=27, GID=27, home=/var/lib/mysql, shell=/sbin/nologin
+Aug 29 15:27:00 target-1 groupadd[3315]: group added to /etc/group: name=nginx, GID=974
+Aug 29 15:27:00 target-1 groupadd[3315]: group added to /etc/gshadow: name=nginx
+Aug 29 15:27:00 target-1 groupadd[3315]: new group: name=nginx, GID=974
+Aug 29 15:27:00 target-1 useradd[3322]: new user: name=nginx, UID=977, GID=974, home=/var/lib/nginx, shell=/sbin/nologin
+Aug 29 15:27:03 target-1 sudo[3230]: pam_unix(sudo:session): session closed for user root
+Aug 29 15:27:05 target-1 sudo[4273]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-jhbiupscwcupzzlbjowrovkazjcjvnjy ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1661779623.9344974-3651-109893198328288/AnsiballZ_systemd.py
+Aug 29 15:27:05 target-1 sudo[4273]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Aug 29 15:27:05 target-1 sudo[4273]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Aug 29 15:27:05 target-1 sudo[4273]: pam_unix(sudo:session): session closed for user root
+Aug 29 15:27:06 target-1 sudo[4530]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-cjslzfadtgukxfsjtabqnghixfsojaru ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1661779625.4001656-3669-63424494106940/AnsiballZ_systemd.py
+Aug 29 15:27:06 target-1 sudo[4530]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Aug 29 15:27:06 target-1 sudo[4530]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Aug 29 15:27:07 target-1 sudo[4530]: pam_unix(sudo:session): session closed for user root
+Aug 29 15:27:08 target-1 sudo[4947]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-rcrckslpoyhzkgloxlubkmmfgdtkmwmx ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1661779627.322129-3687-202878479694784/AnsiballZ_get_url.py
+Aug 29 15:27:08 target-1 sudo[4947]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Aug 29 15:27:08 target-1 sudo[4947]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Aug 29 15:27:09 target-1 sudo[4947]: pam_unix(sudo:session): session closed for user root
+Aug 29 15:28:09 target-1 sshd[2812]: Received disconnect from 192.168.178.66 port 46048:11: disconnected by user
+Aug 29 15:28:09 target-1 sshd[2812]: Disconnected from user ckoca 192.168.178.66 port 46048
+Aug 29 15:28:09 target-1 sshd[2784]: pam_unix(sshd:session): session closed for user ckoca
+Aug 29 15:31:36 target-1 sshd[5044]: Accepted publickey for ckoca from 192.168.178.66 port 60538 ssh2: RSA SHA256:QRjZ2utyqBAcqPSK6HKNUScAXD1ikGjbebKrGwinmhA
+Aug 29 15:31:36 target-1 systemd[5049]: pam_unix(systemd-user:session): session opened for user ckoca by (uid=0)
+Aug 29 15:31:36 target-1 sshd[5044]: pam_unix(sshd:session): session opened for user ckoca by (uid=0)
+Aug 29 15:31:38 target-1 sudo[5273]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-aevhylhaqlmeajjngnnnpavdqtjitmtu ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1661779896.6992717-3834-272743069926615/AnsiballZ_setup.py
+Aug 29 15:31:38 target-1 sudo[5273]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Aug 29 15:31:38 target-1 sudo[5273]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Aug 29 15:31:39 target-1 sudo[5273]: pam_unix(sudo:session): session closed for user root
+Aug 29 15:31:40 target-1 sudo[5485]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-kyrrsfiukwkgiuuahsbvxgjwbxyrxorq ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1661779899.2269742-3864-109462478818335/AnsiballZ_dnf.py
+Aug 29 15:31:40 target-1 sudo[5485]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Aug 29 15:31:40 target-1 sudo[5485]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Aug 29 15:31:46 target-1 sudo[5485]: pam_unix(sudo:session): session closed for user root
+Aug 29 15:31:47 target-1 sudo[5645]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-vckjwxwkzryreyogpnviahbqrqwxytji ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1661779906.139393-3890-240251555703269/AnsiballZ_systemd.py
+Aug 29 15:31:47 target-1 sudo[5645]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Aug 29 15:31:47 target-1 sudo[5645]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Aug 29 15:31:47 target-1 sudo[5645]: pam_unix(sudo:session): session closed for user root
+Aug 29 15:31:48 target-1 sudo[5816]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-mxoikyzzodxuqdppolomcpuqrnseonvq ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1661779907.379786-3908-273371043786829/AnsiballZ_systemd.py
+Aug 29 15:31:48 target-1 sudo[5816]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Aug 29 15:31:48 target-1 sudo[5816]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Aug 29 15:31:48 target-1 sudo[5816]: pam_unix(sudo:session): session closed for user root
+Aug 29 15:32:00 target-1 sshd[5851]: Accepted publickey for ckoca from 2001:16b8:1ebf:c700:a00:27ff:fe2c:b964 port 43808 ssh2: RSA SHA256:QRjZ2utyqBAcqPSK6HKNUScAXD1ikGjbebKrGwinmhA
+Aug 29 15:32:01 target-1 sshd[5851]: pam_unix(sshd:session): session opened for user ckoca by (uid=0)
+Aug 29 15:32:48 target-1 sshd[5069]: Received disconnect from 192.168.178.66 port 60538:11: disconnected by user
+Aug 29 15:32:48 target-1 sshd[5069]: Disconnected from user ckoca 192.168.178.66 port 60538
+Aug 29 15:32:48 target-1 sshd[5044]: pam_unix(sshd:session): session closed for user ckoca
+Aug 29 15:34:50 target-1 sshd[5943]: Accepted publickey for ckoca from 192.168.178.66 port 38278 ssh2: RSA SHA256:QRjZ2utyqBAcqPSK6HKNUScAXD1ikGjbebKrGwinmhA
+Aug 29 15:34:50 target-1 sshd[5943]: pam_unix(sshd:session): session opened for user ckoca by (uid=0)
+Aug 29 15:34:51 target-1 sudo[6130]:   ckoca : TTY=pts/1 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ylyucuqvnbeflzykbpwmwmdszuwtiekv ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1661780090.4794414-4030-67380152247306/AnsiballZ_setup.py
+Aug 29 15:34:51 target-1 sudo[6130]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Aug 29 15:34:51 target-1 sudo[6130]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Aug 29 15:34:52 target-1 sudo[6130]: pam_unix(sudo:session): session closed for user root
+Aug 29 15:34:53 target-1 sudo[6327]:   ckoca : TTY=pts/1 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-maiwkvnsxvwovysnqnexiyaggqntztlg ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1661780093.0787184-4060-172776197704159/AnsiballZ_dnf.py
+Aug 29 15:34:53 target-1 sudo[6327]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Aug 29 15:34:53 target-1 sudo[6327]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Aug 29 15:34:58 target-1 sudo[6327]: pam_unix(sudo:session): session closed for user root
+Aug 29 15:34:59 target-1 sudo[6487]:   ckoca : TTY=pts/1 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-mwzfqmmdrquoczalthfogriewocainfq ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1661780098.594483-4078-56006444486720/AnsiballZ_systemd.py
+Aug 29 15:34:59 target-1 sudo[6487]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Aug 29 15:34:59 target-1 sudo[6487]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Aug 29 15:35:00 target-1 sudo[6487]: pam_unix(sudo:session): session closed for user root
+Aug 29 15:35:01 target-1 sudo[6725]:   ckoca : TTY=pts/1 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-mzsgejthpcdegkpdqmmmtlspdmhilhfp ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1661780100.313638-4096-173959780174200/AnsiballZ_systemd.py
+Aug 29 15:35:01 target-1 sudo[6725]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Aug 29 15:35:01 target-1 sudo[6725]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Aug 29 15:35:02 target-1 sudo[6725]: pam_unix(sudo:session): session closed for user root
+Aug 29 15:36:02 target-1 sshd[5946]: Received disconnect from 192.168.178.66 port 38278:11: disconnected by user
+Aug 29 15:36:02 target-1 sshd[5946]: Disconnected from user ckoca 192.168.178.66 port 38278
+Aug 29 15:36:02 target-1 sshd[5943]: pam_unix(sshd:session): session closed for user ckoca
+Aug 29 15:38:44 target-1 sshd[5854]: Received disconnect from 2001:16b8:1ebf:c700:a00:27ff:fe2c:b964 port 43808:11: disconnected by user
+Aug 29 15:38:44 target-1 sshd[5854]: Disconnected from user ckoca 2001:16b8:1ebf:c700:a00:27ff:fe2c:b964 port 43808
+Aug 29 15:38:44 target-1 sshd[5851]: pam_unix(sshd:session): session closed for user ckoca
+Aug 29 15:38:54 target-1 systemd[5055]: pam_unix(systemd-user:session): session closed for user ckoca
+Oct 13 13:24:59 target-1 polkitd[771]: Loading rules from directory /etc/polkit-1/rules.d
+Oct 13 13:24:59 target-1 sshd[816]: Server listening on 0.0.0.0 port 22.
+Oct 13 13:24:59 target-1 sshd[816]: Server listening on :: port 22.
+Oct 13 13:24:59 target-1 polkitd[771]: Loading rules from directory /usr/share/polkit-1/rules.d
+Oct 13 13:24:59 target-1 polkitd[771]: Finished loading, compiling and executing 12 rules
+Oct 13 13:24:59 target-1 polkitd[771]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Oct 13 13:25:02 target-1 systemd[1012]: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+Oct 13 13:25:03 target-1 gdm-launch-environment][949]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+Oct 13 13:25:09 target-1 polkitd[771]: Registered Authentication Agent for unix-session:c1 (system bus name :1.31 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale de_DE.UTF-8)
+Oct 13 13:28:19 target-1 sshd[1961]: Accepted publickey for ckoca from 192.168.178.66 port 51354 ssh2: RSA SHA256:QRjZ2utyqBAcqPSK6HKNUScAXD1ikGjbebKrGwinmhA
+Oct 13 13:28:19 target-1 systemd[1968]: pam_unix(systemd-user:session): session opened for user ckoca by (uid=0)
+Oct 13 13:28:20 target-1 sshd[1961]: pam_unix(sshd:session): session opened for user ckoca by (uid=0)
+Oct 13 13:28:22 target-1 sudo[2210]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ywopxofkhyglcrlinvrvjniunsxwvpsc ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1665660501.510031-3076-281392237719076/AnsiballZ_setup.py
+Oct 13 13:28:22 target-1 sudo[2210]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 13:28:22 target-1 sudo[2210]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Oct 13 13:28:22 target-1 sudo[2210]: pam_unix(sudo:session): session closed for user root
+Oct 13 13:28:23 target-1 sudo[2407]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-dnhfxowtqmveaxlilkqwgpwrnfipndvj ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1665660504.031485-3111-171929335383953/AnsiballZ_dnf.py
+Oct 13 13:28:23 target-1 sudo[2407]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 13:28:23 target-1 sudo[2407]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Oct 13 13:29:13 target-1 sudo[2407]: pam_unix(sudo:session): session closed for user root
+Oct 13 13:29:14 target-1 sudo[2585]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-yssmzylsshrlydpkwfwduqmntrkcedtk ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1665660554.4978368-3141-170515730904066/AnsiballZ_systemd.py
+Oct 13 13:29:14 target-1 sudo[2585]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 13:29:14 target-1 sudo[2585]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Oct 13 13:29:15 target-1 sudo[2585]: pam_unix(sudo:session): session closed for user root
+Oct 13 13:29:16 target-1 sudo[2806]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-fwalpmkiflukpkvzkhzqhkbteizfljdk ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1665660556.516817-3159-226442003689882/AnsiballZ_systemd.py
+Oct 13 13:29:16 target-1 sudo[2806]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 13:29:16 target-1 sudo[2806]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Oct 13 13:29:17 target-1 sudo[2806]: pam_unix(sudo:session): session closed for user root
+Oct 13 13:29:47 target-1 sshd[3114]: Accepted publickey for ckoca from 2001:16b8:1e9e:4500:a00:27ff:fe2c:b964 port 59572 ssh2: RSA SHA256:QRjZ2utyqBAcqPSK6HKNUScAXD1ikGjbebKrGwinmhA
+Oct 13 13:29:47 target-1 sshd[3114]: pam_unix(sshd:session): session opened for user ckoca by (uid=0)
+Oct 13 13:29:59 target-1 sshd[3117]: Received disconnect from 2001:16b8:1e9e:4500:a00:27ff:fe2c:b964 port 59572:11: disconnected by user
+Oct 13 13:29:59 target-1 sshd[3117]: Disconnected from user ckoca 2001:16b8:1e9e:4500:a00:27ff:fe2c:b964 port 59572
+Oct 13 13:29:59 target-1 sshd[3114]: pam_unix(sshd:session): session closed for user ckoca
+Oct 13 13:30:17 target-1 sshd[1991]: Received disconnect from 192.168.178.66 port 51354:11: disconnected by user
+Oct 13 13:30:17 target-1 sshd[1991]: Disconnected from user ckoca 192.168.178.66 port 51354
+Oct 13 13:30:17 target-1 sshd[1961]: pam_unix(sshd:session): session closed for user ckoca
+Oct 13 13:30:27 target-1 systemd[1973]: pam_unix(systemd-user:session): session closed for user ckoca
+Oct 13 13:30:29 target-1 sshd[3215]: Accepted publickey for ckoca from 192.168.178.66 port 51172 ssh2: RSA SHA256:QRjZ2utyqBAcqPSK6HKNUScAXD1ikGjbebKrGwinmhA
+Oct 13 13:30:29 target-1 systemd[3220]: pam_unix(systemd-user:session): session opened for user ckoca by (uid=0)
+Oct 13 13:30:29 target-1 sshd[3215]: pam_unix(sshd:session): session opened for user ckoca by (uid=0)
+Oct 13 13:30:31 target-1 sudo[3443]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-tavqvrkwpdcssrygwqscytgfogetiiua ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1665660630.7556987-3271-31643562323108/AnsiballZ_setup.py
+Oct 13 13:30:31 target-1 sudo[3443]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 13:30:31 target-1 sudo[3443]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Oct 13 13:30:32 target-1 sudo[3443]: pam_unix(sudo:session): session closed for user root
+Oct 13 13:30:33 target-1 sudo[3655]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-dsefkhaycvnvflmfsvymxztsgsitzybt ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1665660633.320919-3301-124150249455111/AnsiballZ_dnf.py
+Oct 13 13:30:33 target-1 sudo[3655]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 13:30:33 target-1 sudo[3655]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Oct 13 13:30:38 target-1 sudo[3655]: pam_unix(sudo:session): session closed for user root
+Oct 13 13:30:39 target-1 sudo[3815]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-hpzvcegrnvaltujsjweempfzmrlddwpw ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1665660639.9885159-3319-177430511807156/AnsiballZ_systemd.py
+Oct 13 13:30:39 target-1 sudo[3815]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 13:30:40 target-1 sudo[3815]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Oct 13 13:30:41 target-1 sudo[3815]: pam_unix(sudo:session): session closed for user root
+Oct 13 13:30:41 target-1 sudo[4048]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-gkawpyqdtwkoayhaobtgxggwvljnngco ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1665660642.134488-3337-158453884781915/AnsiballZ_systemd.py
+Oct 13 13:30:41 target-1 sudo[4048]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 13:30:41 target-1 sudo[4048]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Oct 13 13:30:43 target-1 sudo[4048]: pam_unix(sudo:session): session closed for user root
+Oct 13 13:31:01 target-1 sshd[4120]: Accepted publickey for ckoca from 2001:16b8:1e9e:4500:a00:27ff:fe2c:b964 port 46504 ssh2: RSA SHA256:QRjZ2utyqBAcqPSK6HKNUScAXD1ikGjbebKrGwinmhA
+Oct 13 13:31:01 target-1 sshd[4120]: pam_unix(sshd:session): session opened for user ckoca by (uid=0)
+Oct 13 13:31:09 target-1 sshd[4123]: Received disconnect from 2001:16b8:1e9e:4500:a00:27ff:fe2c:b964 port 46504:11: disconnected by user
+Oct 13 13:31:09 target-1 sshd[4123]: Disconnected from user ckoca 2001:16b8:1e9e:4500:a00:27ff:fe2c:b964 port 46504
+Oct 13 13:31:09 target-1 sshd[4120]: pam_unix(sshd:session): session closed for user ckoca
+Oct 13 13:31:43 target-1 sshd[3239]: Received disconnect from 192.168.178.66 port 51172:11: disconnected by user
+Oct 13 13:31:43 target-1 sshd[3239]: Disconnected from user ckoca 192.168.178.66 port 51172
+Oct 13 13:31:43 target-1 sshd[3215]: pam_unix(sshd:session): session closed for user ckoca
+Oct 13 13:31:54 target-1 systemd[3225]: pam_unix(systemd-user:session): session closed for user ckoca
+Oct 13 13:41:11 target-1 sshd[4304]: Connection closed by authenticating user root 192.168.178.66 port 49444 [preauth]
+Oct 13 13:41:42 target-1 sshd[4306]: Accepted publickey for ckoca from 192.168.178.66 port 47028 ssh2: RSA SHA256:QRjZ2utyqBAcqPSK6HKNUScAXD1ikGjbebKrGwinmhA
+Oct 13 13:41:42 target-1 systemd[4315]: pam_unix(systemd-user:session): session opened for user ckoca by (uid=0)
+Oct 13 13:41:42 target-1 sshd[4306]: pam_unix(sshd:session): session opened for user ckoca by (uid=0)
+Oct 13 13:41:43 target-1 sudo[4536]:   ckoca : TTY=pts/0 ; PWD=/home/ckoca ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ysuajgscktltnhvtmbkqjwzpibvlfdxf ; /usr/libexec/platform-python /home/ckoca/.ansible/tmp/ansible-tmp-1665661303.5458903-3799-221227257205319/AnsiballZ_setup.py
+Oct 13 13:41:43 target-1 sudo[4536]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 13:41:43 target-1 sudo[4536]: pam_unix(sudo:session): session opened for user root by ckoca(uid=0)
+Oct 13 13:41:44 target-1 sudo[4536]: pam_unix(sudo:session): session closed for user root

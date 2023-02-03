@@ -1,0 +1,43 @@
+---
+- name: User Creation Playbook on Managed Hosts dev and prod
+  hosts: myservers
+  become: true 
+  gather_facts: true 
+
+  vars_files: 
+    - user_list.yml 
+    - secret.yml 
+
+  tasks: 
+
+    - name: Create Group on Dev 
+      group: 
+        name: developer 
+        state: present 
+      when: inventory_hostname in groups['dev']
+
+    - name: Create Group on Prod 
+      group: 
+        name: manager 
+        state: present 
+      when: inventory_hostname in groups['prod']
+
+    - name: Create User on Dev 
+      user: 
+        name: "{{ item.name }}"
+        comment: "{{ item.description }}"
+        groups: developer 
+        password: "{{ dev_pw | password_hash('sha512') }}"
+      loop: "{{ users }}"
+      when: item.job == 'developer' and inventory_hostname in groups['dev']
+
+    - name: Create User on Prod 
+      user: 
+        name: "{{ item.name }}"
+        comment: "{{ item.description }}"
+        groups: manager
+        password: "{{ mgr_pw | password_hash('sha512') }}"
+      loop: "{{ users }}"
+      when: item.job == 'manager' and inventory_hostname in groups['prod']
+
+

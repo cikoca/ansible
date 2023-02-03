@@ -1,0 +1,2 @@
+touch /home/ckoca/filefromscript
+

@@ -1,0 +1,23 @@
+---
+- name: Cleanup httpd and open Firewall Port
+  hosts: all
+
+  tasks:
+
+    - name: Close port 80 for http access
+      firewalld:
+        service: http
+        permanent: true
+        state: disabled
+
+    - name: Stop and disabled httpd Service
+      service:
+        name: httpd
+        state: stopped
+        enabled: false
+
+    - name: Deinstall Apache packages
+      yum:
+        name: httpd
+        state: absent
+

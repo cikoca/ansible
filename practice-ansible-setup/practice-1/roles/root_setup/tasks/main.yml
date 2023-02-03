@@ -1,0 +1,15 @@
+---
+# tasks file for root_setup
+- name: Permitting Root Login Message
+  debug:
+    msg:
+       - "+------------------------+"
+       - "|    Permit Root Login   |"
+       - "+------------------------+"
+ 
+- name: Setup sshd_config on Managed Hosts for User
+  lineinfile:
+    regexp: ^PermitRootLogin
+    line: PermitRootLogin yes
+    dest: /etc/ssh/sshd_config
+  notify: Reload Daemon

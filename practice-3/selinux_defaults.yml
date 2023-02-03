@@ -1,0 +1,14 @@
+---
+- name: Using the file module to ensure SELinux file context
+  hosts: all
+  remote_user: ckoca
+
+  tasks:
+
+    - name: SELinux file context is set to defaults
+      file:
+        path: /home/ckoca/myfile.txt
+        seuser: _default
+        serole: _default
+        setype: _default
+        selevel: _default

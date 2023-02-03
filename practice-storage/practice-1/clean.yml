@@ -1,0 +1,45 @@
+--- 
+- name: Storage Management on Storage Host
+  hosts: storage
+  become: true
+  gather_facts: true
+  ignore_errors: true 
+
+  tasks: 
+
+    - name: Unmount /mymounts 
+      mount: 
+        path: /mymounts
+        state: unmounted 
+
+    - name: Delete Mountpoint 
+      file: 
+        path: /mymounts
+        state: absent
+
+    - name: Delete Filesystem 
+      filesystem: 
+        dev: /dev/vg_koca/mylv
+        state: absent
+        force: true 
+
+    - name: Clean LV mylv
+      lvol: 
+        vg: vg_koca
+        lv: mylv
+        state: absent
+        force: true 
+
+    - name: Delete VG 
+      lvg: 
+        vg: vg_koca
+        pvs: /dev/sdc1
+        state: absent
+        force: true 
+
+    - name: Create Primary Partition on SDC
+      parted: 
+        device: /dev/sdc
+        number: 1
+        state: absent
+   

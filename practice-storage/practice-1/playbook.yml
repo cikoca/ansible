@@ -1,0 +1,58 @@
+--- 
+- name: Storage Management on Storage Host
+  hosts: storage
+  become: true 
+  gather_facts: true
+  ignore_errors: true 
+
+  tasks: 
+
+    - name: Create Primary Partition on SDC
+      parted: 
+        device: /dev/sdc
+        number: 1
+        state: present
+
+    - name: Check for VG
+      shell: 
+        cmd: vgs vg_koca
+      register: check_vg
+
+    - name: Check for Volume Group 
+      fail: 
+        msg: "No Volume Group Existing"
+      when: check_vg is success
+
+    - name: Create VG if not existing 
+      lvg: 
+        vg: vg_koca
+        pvs: /dev/sdc1
+        state: present
+   
+    - name: Create LV if not existing 
+      lvol: 
+        vg: vg_koca
+        lv: mylv
+        state: present 
+        size: 512M
+        resizefs: true
+        force: true 
+      when: "'vg_koca' not in ansible_lvm['lvs']"
+
+    - name: Create Filessystem
+      filesystem: 
+        fstype: ext4
+        dev: /dev/vg_koca/mylv
+        state: present
+
+    - name: Create Mount Dir /mymounts
+      file: 
+        state: directory
+        path: /mymounts
+
+    - name: Mount FS to /mymounts
+      mount: 
+        path: /mymounts
+        src: /dev/vg_koca/mylv
+        state: mounted
+        fstype: ext4

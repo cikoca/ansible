@@ -1,0 +1,10 @@
+---
+- name: Cleanup and stop httpd on target-1
+  hosts: 192.168.178.67
+  remote_user: ckoca
+  tasks: 
+    - name: Disable and Stop httpd
+      service: 
+        name: httpd
+        state: stopped
+        enabled: false

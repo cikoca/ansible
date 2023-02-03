@@ -1,0 +1,22 @@
+---
+# tasks file for ssh-user-keygen
+- name: ensure ~/.ssh directory exists
+  become: true
+  become_user: root
+  with_items: '{{ ssh_user_target_users }}'
+  file:
+    owner: '{{ item.u }}'
+    path: '{{ item.hd | default(ssh_user_default_homedir + "/" + item.u) }}/.ssh'
+    state: directory
+    mode: 0700
+
+- name: authorize public key...
+  become: true
+  become_user: root
+  with_items: '{{ ssh_user_target_users }}'
+  lineinfile:
+    create: true
+    owner: '{{ item.u }}'
+    dest: '{{ item.hd | default(ssh_user_default_homedir + "/" + item.u) }}/.ssh/authorized_keys'
+    line: '{{ lookup("file", ssh_user_pubkey) }}'
+    mode: 0644

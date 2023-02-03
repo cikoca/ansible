@@ -1,0 +1,23 @@
+---
+- name: Setup Ansible and Communication on managed Hosts
+  hosts: myservers, localhost
+  gather_facts: true 
+  become: true 
+
+  tasks:
+
+    - name: Start Install Role
+      include_role: 
+        name: install_packages
+
+    - name: Start SSH Setup 
+      include_role: 
+        name: ssh_setup
+
+    - name: Start root Setup 
+      include_role: 
+        name: root_setup 
+
+    - name: Start Ansible User Setup 
+      include_role: 
+        name: user_perm

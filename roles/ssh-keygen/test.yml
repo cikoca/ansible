@@ -1,0 +1,6 @@
+---
+- hosts: all
+  roles:
+    - role: '{{ playbook_dir }}'
+      ssh_user_keydir: '{{ playbook_dir }}'
+      ssh_user_keypair: test-keypair
