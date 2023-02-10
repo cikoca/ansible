@@ -7,6 +7,11 @@
        - "| Ansible User Permissions |"
        - "+--------------------------+"
  
+- name: Check if user exists
+  user: 
+    name: ckoca
+    state: present
+
 - name: Setup Sudoers with nopasswd
   file:
     path: /etc/sudoers.d/ckoca

@@ -1,4 +1,5 @@
 This is the system {{ ansible_facts['fqdn'] }}.
+The default ipv4 Address: {{ ansible_facts['default_ipv4']['address'] }}
 This is a {{ ansible_facts['distribution'] }} version {{ ansible_facts['distribution_version'] }} system. 
 
 Only use this system with permission. 
