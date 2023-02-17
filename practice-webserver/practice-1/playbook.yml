@@ -29,30 +29,7 @@
         permanent: true 
         immediate: true 
 
-    - name: Create Dir for Webcontent
-      file: 
-        state: directory 
-        path: /myweb 
-        mode: 02775
-        setype: httpd_sys_content_t 
-
-    - name: Create index
-      file: 
-        state: touch
-        path: /myweb/index.html 
-
     - name: Copy Content to index.html
       copy: 
-        content: "Development Webserver" 
-        dest: /myweb/index.html 
-
-    - name: Create Directory
-      file: 
-        state: directory
-        path: /var/www/html/myweb
-
-    - name: Create a Link 
-      file: 
-        path: /myweb
-        dest: /var/www/html/
-        state: link 
+        content: "Development Webserver\n" 
+        dest: /var/www/html/index.html 
