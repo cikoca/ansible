@@ -1,0 +1,6 @@
+[init]
+	defaultBranch = none
+[fetch]
+	recurseSubmodules = false
+[http "https://gitlab.com"]
+	sslCAInfo = /home/ckoca/ansible/builds/CZYsyQmm/0/cikoca/myansible.tmp/CI_SERVER_TLS_CA_FILE
