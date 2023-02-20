@@ -1,6 +1,6 @@
 ---
 - name: Setup Ansible and Communication on managed Hosts
-  hosts: myservers, localhost
+  hosts: all, localhost
   gather_facts: true 
   become: true 
 
